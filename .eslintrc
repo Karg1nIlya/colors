@@ -1,0 +1,22 @@
+{
+  "extends": ["react-app", "react-app/jest"],
+  "scripts": {
+    "lint:es": "eslint --ext .js,.jsx,.ts,.tsx src",
+    "lint:es:fix": "npm run lint:es -- --fix"
+  },
+  // "overrides": [],
+  // "plugins": ["react", "import"],
+  "rules": {
+    "no-param-reassign": "warn",
+    "func-names": ["warn", "never"],
+    "no-plusplus": ["error", {"allowForLoopAfterthoughts": true}],
+    "no-unused-expressions": ["error", {"allowTernary": true, "allowShortCircuit": true}],
+    "no-unused-vars": "warn",
+    "arrow-parens": ["error", "as-needed"],
+    "comma-dangle": ["error", "never"],
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"]}],
+    "react/prop-types": "off",
+    "react/display-name": "off"
+  }
+}
